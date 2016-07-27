@@ -1,5 +1,5 @@
 # Alixir | elixir-helper | laravel-elixir-helper
-Alixir is `npm package` built on top of elixer and gulp, its an easy cleaning solution to CSS / JS mess. Giving you a nice clean structure for organizing all your sites assets whether it is images, javascript files, or stylesheets and keeps the power of SASS, Browserify, versioning at your fingertips in simple commands you might already be familiar with.
+laravel-elixir-helper is `npm package` built on top of elixer and gulp, its an easy cleaning solution to CSS / JS mess. Giving you a nice clean structure for organizing all your sites assets whether it is images, javascript files, or stylesheets and keeps the power of SASS, Browserify, versioning at your fingertips in simple commands you might already be familiar with.
 **The advantage of this package is breaking down all your project assets files as templates by filtering gulp and dealing with json files without editing gulp** 
 
 ## You can use this:
@@ -15,7 +15,7 @@ gulp watch --template customer-service --css
 ## Installation ##
 **npm**  
 ```
-npm install alixir --save-dev
+npm install laravel-elixir-helper --save-dev
 
 npm install gulp@">=0.1.0 <=3.9.1" --save-dev
 
@@ -27,10 +27,10 @@ npm install laravel-elixir@">=0.1.0 <=5.0.0" --save-dev
 ## Usage
 **gulpfile.js** 
 ```
-require('alixir');
+require('laravel-elixir-helper');
 ```
 
-Create **alixir.json** in the project root dir to override alixir config (files, filters and path) [see documentaion](ALIXIR.md) 
+Create **alixir.json** in the project root dir to override laravel-elixir-helper config (files, filters and path) [see documentaion](ALIXIR.md) 
 ```json
 {
   "files": {
@@ -231,7 +231,7 @@ start with:
 gulp help
 ```
 
-to view alixir config:
+to view laravel-elixir-helper config:
 ```
 gulp config
 ```
@@ -259,6 +259,6 @@ gulp assets
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
 
