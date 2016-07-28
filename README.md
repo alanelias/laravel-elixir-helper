@@ -2,6 +2,60 @@
 laravel-elixir-helper is `npm package` built on top of elixir and gulp, its an easy cleaning solution to CSS / JS mess. Giving you a nice clean structure for organizing all your sites assets whether it is images, javascript files, or stylesheets and keeps the power of SASS, Browserify, versioning at your fingertips in simple commands you might already be familiar with.
 **The advantage of this package is breaking down all your project assets files as templates by filtering gulp and dealing with json files without editing gulp** 
 
+**Project**
+```
+│
+├───/public/
+│   │ 
+│   ├───/build/
+│   ├───/css/
+│   │   ├───app.css
+│   │   ├───app-home.css
+│   │   └───app-customer-service.css
+│   ├───/js/
+│   │   ├───app.js
+│   │   ├───app-home.js
+│   │   └───app-customer-service.js
+│   ├───/fonts/
+│   │   ├───/font-awesome/
+│   │   ├───/bootstrap/
+│   │   └───/custom/
+│   └───/images/
+│       ├───/package1/
+│       ├───/package2/
+│       └───/package3/
+│
+├───/resources/
+│   ├───/assets/
+│   │   │
+│   │   ├────/js/
+│   │   │    ├────/common/
+│   │   │    ├────/pages/ 
+│   │   │    ├────app.js
+│   │   │    ├────app-global.js
+│   │   │    └────app-admin.js
+│   │   │ 
+│   │   ├────/sass/
+│   │   │    ├────/common/ 
+│   │   │    ├────/layouts/
+│   │   │    ├────/pages/
+│   │   │    └────app.scss 
+│   │   │ 
+│   │   ├────styles.json (styles tasks --css)
+│   │   │ 
+│   │   ├────scripts.json (scripts tasks --js)
+│   │   │ 
+│   │   └────assets.json (assets tasks)
+│   │   
+│   └───/views/
+│      
+├───package.json
+├───alixir.json (override package config)
+├───gulpfile.js
+│
+
+```
+
 ## You can use this:
 ```
 gulp watch --template customer-service --js
