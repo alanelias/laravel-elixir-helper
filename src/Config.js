@@ -66,7 +66,7 @@ var package_config = {
 var override_package_config = {};
 
 try {
-    var override_package_config = require(package_config.path.project + package_config.files.config);
+    override_package_config = require(package_config.path.project + package_config.files.config);
 }catch (err){
     // do nothing
     console.log(color("Note: there is no " + package_config.files.config, "YELLOW"));
@@ -74,15 +74,15 @@ try {
 
 package_config = MergeRecursive(package_config, override_package_config);
 
-var gunit_config = gutil.env.ALIXIER_CONFIG;
-if(gunit_config){
+var gunit_config = gutil.env.ALIXIR_CONFIG;
+if(typeof (gunit_config) !== "undefined"){
     package_config = MergeRecursive(package_config, gunit_config);
 }
 
 package_config.other.RegExp = new RegExp(Object.keys(package_config.filters).join("|"),"gi");
 
 
-gutil.env.ALIXIER_CONFIG =  package_config;
+gutil.env.ALIXIR_CONFIG =  package_config;
 
 /**
  *
