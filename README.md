@@ -79,6 +79,7 @@ npm install gulp --save-dev
 
 npm install laravel-elixir --save-dev
 ```
+**Note** `production` usage you can install all required packages with `--save` for production
 
 **Note** if you have this error:
 `gulp-notify: [Laravel Elixir] Browserify Failed!: Couldn't find preset "es2015" relative to directory` 
@@ -91,6 +92,14 @@ npm install babel-preset-react --save-dev
 **Note** if you are using newer version of laravel-elixir v6 you might need to install the following package:
 ```
 npm install laravel-elixir-browserify-official --save-dev
+```
+
+**Note** if you have any problems with files permissions you can run `sudo` on mac
+   
+**On Deploy** run the following commands: 
+```
+gulp assets
+gulp --production
 ```
 
 ## Usage
