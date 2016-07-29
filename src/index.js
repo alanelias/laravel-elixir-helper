@@ -416,6 +416,12 @@ gulp.task("config", function () {
 
 
 
-
+/**
+ * gulp about
+ */
+gulp.task("about", function () {
+    var about = require('./about.js');
+    about.show();
+});
 
 
