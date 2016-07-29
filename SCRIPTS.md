@@ -25,4 +25,5 @@
  */
 ```
 
-[Back to main README](README.md)
+
+[Go Back](README.md)
