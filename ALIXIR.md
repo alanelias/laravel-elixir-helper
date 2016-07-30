@@ -62,7 +62,7 @@ gutil.env.ALIXIR_CONFIG = {
     }
 };
 
-require("alixir");
+require("laravel-elixir-helper");
 ```
 
 
