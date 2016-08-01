@@ -70,5 +70,28 @@ class AssetsHelper
 }
 ```
 
+**Style Page** to style page: 
+```
+http://your-website.com/dashboard/products/
+```
+Use this for less or sass:
+```scss
+// the file would be pages/dashboard/products
+body.dashboard-products {
+    // styles here
+}
+```
+
+**Route With IDs** to style page has id route:
+```
+http://your-website.com/dashboard/products/25546/
+```
+You can use this for sass or less:
+```scss
+// the file would be pages/dashboard/products/single-product
+body[class^="dashboard-products-"], div[class*=" dashboard-products-"] {
+    // styles here
+}
+```
 
 [Go Back](README.md)
